@@ -80,8 +80,10 @@ export function GamifiedQuizComponent() {
               {quizData[currentQuestion].options.map((option, index) => (
                 <motion.div 
                   key={index} 
+                  initial={{ scale: 1 }}
                   whileHover={{ scale: 1.05 }} 
-                  whileTap={{ scale: 0.95 }} 
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
                   <Button
                     variant={selectedAnswer === option ? "default" : "outline"}
