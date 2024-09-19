@@ -102,6 +102,8 @@ const finalBoss = {
   question: "Does a Revision Request change the Ad status for Sales Rep's Correction?",
     options: ["TRUE", "FALSE"],
     correctAnswer: "TRUE",
+    clue: "You uncover a crucial misunderstanding in the revision process.",
+
 }
 
 export function DetectiveQuizComponent() {
